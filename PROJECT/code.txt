@@ -1,0 +1,41 @@
+int m1Pin =
+int m2Pin = 
+int m3Pin = 
+int m4Pin = 
+int mcntrl = 
+
+Serial.begin(9600);
+pinMode(m1Pin, OUTPUT);
+pinMode(m2Pin, OUTPUT);
+pinMode(m3Pin, OUTPUT);
+pinMode(m4Pin, OUTPUT);
+pinMode(mcntrl, )
+
+
+void front()
+{
+digitalWrite(m1Pin, LOW); digitalWrite(m2Pin, HIGH); 
+digitalWrite(m3Pin, LOW); digitalWrite(m4Pin, HIGH);
+}
+
+void back()
+{
+digitalWrite(m2Pin, LOW); digitalWrite(m1Pin, HIGH); 
+digitalWrite(m4Pin, LOW); digitalWrite(m3Pin, HIGH);
+}
+
+void right()
+{
+digitalWrite(m1Pin, LOW); digitalWrite(m2Pin, HIGH);
+digitalWrite(m3Pin, HIGH); digitalWrite(m4Pin, LOW);
+}
+
+void left()
+{
+digitalWrite(m1Pin, HIGH); digitalWrite(m2Pin, LOW);
+digitalWrite(m3Pin, LOW); digitalWrite(m4Pin, HIGH);
+} 
+
+
+if (mcntrl == HIGH)
+{
